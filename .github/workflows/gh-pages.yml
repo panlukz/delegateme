@@ -18,8 +18,6 @@ jobs:
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         #BASE_BRANCH: development # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: build/wwwroot # The folder the action should deploy.
-        SINGLE_COMMIT: true
